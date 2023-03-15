@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2791784218.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">   
+    <title>Online Book Library Web</title>
+</head>
+
+
+<body>
+
+    <!-- TOP NAVIG START -->
+    <header>
+      <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"><i class="fa-solid fa-book"></i>
+            BOOKLETS</a>
+        <a href="#news">HOME</a>
+        <a href="#contact">SERVICES</a>
+        <a href="#about">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
+    <div style="padding-left: 24px">
+      <h2>Welcome to our Home Page</h2>
+      <p>Booklets are offering 4 new different book that will bring you to imagine the stories as you read every chapter.</p>
+    </div>
+  </header>
+    <!-- TOP NAVIG END  -->
+    
+        
+      
+
+      <!-- Search / filter / START  -->
+<div class="search-portion">
+ <form class="search-form">
+    <select class="select">
+        <option disabled="Filter" selected="">Filter</option>
+        <option>Drama</option>
+        <option>Fiction</option>
+        <option>Historical</option>
+   </select>
+      <input type="text" class="search" placeholder="Enter Book Title, Author, Etc.">
+      <input type="submit" class="button-search" value="Search">
+  </form>
+</div>
+      <!-- Search / filter - END  -->
+
+ <!-- START CONTENT -->
+ <section>
+  <div class="row">
+    <div class="column">
+        <div class="card">
+              <img src="assets/images/image1.jpg" alt="">
+              <h3>To Kill of A Mockingbird</h3>
+              <span>$9.99 Sale</span>
+              <p> “Mockingbirds don’t do one thing but make music for us to enjoy."</p>
+              <div class="btn-container">
+                <div class="button-A"> 
+                  <a href="#"><i class="fa-regular fa-star"></i>
+                    Add to Wishlist</a> 
+                </div>
+                  
+                <div class="button-B">
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Cart</a> 
+                </div>
+              </div>
+              <div class="button-C"> 
+                <a href="form.html">
+                   <i class="fa-solid fa-tag"></i> Buy Now</a> 
+            </div>  
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="assets/images/image2.jpg" alt="">
+        <h3>The Great Gatsby</h3>
+        <span>$39.99 Sale</span>
+        <p>'You can't live forever; you can't live forever.” </p>
+        <div class="button-A"> 
+          <a href="#"><i class="fa-regular fa-star"></i>
+            Add to Wishlist</a> </div>
+          
+        <div class="button-B">
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Cart</a> </div>
+
+        <div class="button-C"> 
+          <a href="form.html">
+             <i class="fa-solid fa-tag"></i> Buy Now</a> 
+      </div>  
+      </div>
+    </div>
+        <div class="column">
+          <div class="card">
+            <img src="assets/images/image3.jpg" alt="">
+            <h3>1984</h3>
+            <span>$19.99 Sale</span>
+            <p> “Who controls the past controls the future.” </p>
+            <div class="button-A"> 
+              <a href="#"><i class="fa-regular fa-star"></i>
+                Add to Wishlist</a> </div>
+              
+            <div class="button-B">
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Cart</a> </div>
+
+            <div class="button-C"> 
+              <a href="form.html">
+                 <i class="fa-solid fa-tag"></i> Buy Now</a> 
+          </div>  
+          </div>
+        </div>
+  <div class="column">
+      <div class="card">
+        <img src="assets/images/image4.jpg" alt="">
+        <h4>Adventures of Huckleberry Finn</h4>
+        <span>$8.99 Sale</span>
+        <p> “I do not wish any reward but to know I have done the right thing.”</p>
+        <div class="button-A"> 
+          <a href="#"><i class="fa-regular fa-star"></i>
+            Add to Wishlist</a> </div>
+          
+        <div class="button-B">
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Cart</a> </div>
+
+        <div class="button-C"> 
+          <a href="form.html">
+             <i class="fa-solid fa-tag"></i> Buy Now</a> 
+       </div>  
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- END CONTENT -->
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-content">
+      <h2><i class="fa-solid fa-book"></i> BOOKLETS</h2>
+      <span>433-331 / (102) 443-331</span>
+      <span>BookletsPage2023@gmail.com</span>
+      <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>copyright &copy; <a href="#"><i class="fa-solid fa-book"></i> BOOKLETS</a></p>
+  </div>
+</footer>
+
+</body>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+
+
+</html>

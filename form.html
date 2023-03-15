@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="assets2/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Order Form</title>
+
+
+</head>
+<body>
+
+
+<!-- header nav -->
+
+    <!-- TOP N -->
+    <header>
+      <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"><i class="fa-solid fa-book"></i>
+            BOOKLETS</a>
+        <a href="index.html">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    
+<h4>Reminders: Make sure to fill up the items below so you can proceed to Checkout. </h4>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="#">
+        <div class="row">
+          <div class="col-50">
+            <h3>Customer Information</h3>
+            <div class="row">
+              <div class="col-50">
+                <label for="fname"><i class="fa-solid fa-user"></i> Name: </label>
+                <input type="text" id="fname" name="firstname" placeholder="Juan Dela Cruz" required>
+              </div>
+            </div>
+
+<!-- Phone and Birthday -->
+
+            <div class="row"> 
+              <div class="col-50">
+                <label for="phoneNumber"><i class="fa-solid fa-phone"></i> Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="Ex. 09123456789"  minlength="1" maxlength="11" required>
+              </div>
+              <div class="col-50">
+                <label for="birthDate"><i class="fa-solid fa-calendar"></i> Date of Birth: </label>
+                <input type="date" id="birthDate" name="birthDate" min="1970-01-01" max="2023-01-01" required>
+                   
+              </div>
+            </div>
+
+            <label for="email"><i class="fa fa-envelope"></i> Email: </label>
+            <input type="email" id="email" name="email" placeholder="Juan.Delacruz@hotmail.com">
+
+            <label for="homeAddress"><i class="fa-solid fa-house"></i> Home Address:</label>
+            <input type="text" id="homeAdress" name="address" placeholder="Blk # Lot # St. " required>
+
+            <label for="Region"><i class="fa-solid fa-globe"></i> Region: </label>
+            <select class="userRegion">
+              <option disabled selected>Please Select</option>
+              <option value="userRegion">Region I</option>
+              <option value="userRegion">Region II</option>
+              <option value="userRegion">Region III</option>
+              <option value="userRegion">Region IV</option>        
+              <option value="userRegion">NCR</option>    
+              <option value="userRegion">BARMM</option>        
+              <option value="userRegion">CALABARZON</option> 
+          </select>
+            
+            <label for="userCity"><i class="fa fa-institution"></i> City: </label>
+            <select class="userCity">
+              <option disabled selected>Please Select</option>
+              <option>Manila</option>
+              <option>Cavite</option>
+              <option>Tarlac</option>
+              <option>Angeles</option>
+               </select>
+          <label for="zip"><i class="fa-solid fa-hashtag"></i> Zip Code: </label>
+            <input type="text" id="zip" name="zip" placeholder="# 4132" min="1" max="11" required>
+
+
+          <div class="row2">
+          <div class="col-50 a">
+            <h2>Payment</h2>
+            <label for="Payment">Accepted Cards: </label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"> Visa card</i>
+              <i class="fa fa-cc-amex" style="color:blue;"> American Express</i>
+              <i class="fa fa-cc-mastercard" style="color:red;"> Master Card</i>
+              <i class="fa fa-cc-discover" style="color:orange;"> Discover</i>
+            </div>
+            </div>
+              <div class="col-50 b">
+                <label for="userPayment"> Mode of Payment: </label>
+                <select class="userPayment">
+                  <option disabled selected>Please Select</option>
+                  <option value="userPayment">Online Payment</option>
+                  <option value="userPayment">Installment</option>
+                  <option value="userPayment">Cash On Delivery</option>
+              </select>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+        <input type="submit" value="Checkout" class="btn">
+      </form>
+    </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:rgb(0, 0, 0)"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p>To Kill A Mockingbird</a> <span class="price">$9.99</span></p>
+      <p>The Great Gatsby</a> <span class="price">$39.99</span></p>
+      <p>1984</a> <span class="price">$19.99</span></p>
+      <p>Adventures of Huckleberry Finn</a> <span class="price">$8.99</span></p>
+      <hr>
+      <p>Total: <span class="price" style="color:black"><b>$78.96</b></span></p>
+    </div>
+  </div>
+</div>
+    
+</body>
+
+      
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+
+</html>
