@@ -4,8 +4,9 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 17px;
   padding: 0.2px;
-  background-color: #95f800;
-  background-size: 1640px;
+  background-color: #cccec9;
+  background-size: 1080px;
+
 
 }
 
@@ -13,7 +14,6 @@ body {
 .topnav {
   overflow: hidden;
   background-color: black;
-  position: sticky;
 
 }
 
@@ -90,7 +90,7 @@ align-items: center;
 
 .select {
 
-  margin: 2px;
+ 
   width: 80px;
   height: 30px;
   border: 1px solid black;
@@ -100,8 +100,8 @@ align-items: center;
 
 .search {
 
-  margin: 0;
-  width:  280px;
+
+  width:  200px;
   height: 30px;
 
 }
@@ -118,19 +118,28 @@ align-items: center;
 }
 
 
-@media screen and (min-width: 600px )
-
+@media (min-width: 320px)
 {
   .searh-portion {
 
     display: inline block;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     padding-left: 30px;
+
+  }
+
+
+  section {
+
+    width: auto;
+    padding: 10px;
 
 
   }
+
+  
+
 
 
 }
@@ -146,12 +155,11 @@ align-items: center;
     display: flex;
     flex-direction: column;
     padding: 10px; 
-    width: 100px;
     align-items: center;
-    margin-left: 200px;
 
    
   }
+  
 
 }
 
@@ -177,7 +185,7 @@ section {
 
 .card img {
 
-  width: 100%;
+  width: 90%;
   height: 505px;
  
 }
@@ -187,16 +195,16 @@ section {
 .column {
  
   width: 25%;
-  padding: 10px;
+  padding: 10px 18px;
   min-width: 340px;
 }
 
 .row {margin: 0 -5px;
   padding: 40px 0;
-  width: 90%;
   max-width: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 
@@ -215,9 +223,8 @@ section {
 
   /* added  */
 
-  margin-left: 20px;
+  font-size: large;
   height: 100%;
-  width: 350px;
   border-radius: 15px;
   background-color: #f3f7ed;
   box-shadow: 10px 10px #635e5e;
@@ -230,10 +237,16 @@ section {
   background-color: red;
   color: white;
   text-decoration: solid;
-  width: 300px;
+  width: 270px;
 
 }
 
+.card p {
+
+  font-size: large;
+  padding: 30px;
+
+}
 
 
 .button-C { 
@@ -296,7 +309,7 @@ button i {
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
     display: block;
@@ -310,6 +323,7 @@ button i {
     justify-content: center;
     flex-direction: column;
   }
+  
 
 
 }
